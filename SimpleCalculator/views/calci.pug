@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Calculator
+    style(type="text/css").
+      input, select, button {
+        border: 1px solid red;
+      }
+
+      .formBlock {
+        display: flex;
+        width: 300px;
+        margin: 10px auto;
+      }
+
+      .formBlock > input, .formBlock > button {
+        flex: 1;
+      }
+  body
+    h1 Calculator
+    form(method="post" action="/")
+      .formBlock
+        input(type="number" name="opl" placeholder="Left operand")
+      label.formBlock
+        span(style="display: inline-block; flex: 1;") Operator:&nbsp;
+        select(name="op")
+          option(value="+") +
+          option(value="-") -
+          option(value="*") *
+          option(value="/") /
+      .formBlock
+        input(type="number" name="opr" placeholder="Right operand")
+      .formBlock
+        button(type="submit") Calculate!!
+
+    if typeof result !== "undefined"
+      h2 Result: #{result}
+      //h2= `Result: ${result}`

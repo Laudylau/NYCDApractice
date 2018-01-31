@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title
+      | Login page
+    
+  body
+    h1 You can login now!
+    
+    form(method="post" action="/profile")
+      
+        label
+          | E-mail:
+          input(type="email" name="email" required)
+        
+        label
+          | Password:
+          input(type="password" name="password" required)
+        
+        button(type="submit") Click to log in!

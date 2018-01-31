@@ -1,0 +1,15 @@
+{
+  "name": "expressapp",
+  "version": "1.0.0",
+  "description": "exercice from tut traversy",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "laura",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}
